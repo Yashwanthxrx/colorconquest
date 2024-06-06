@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/reset">
+
+        <TextView
+            android:layout_width="377dp"
+            android:layout_height="42dp"
+            android:background="@drawable/resettext"
+            android:fontFamily="@font/lilita"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="GAME  RULES"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. 1st Turn of each player: Players can choose any tile on the grid on this turn only. Clicking a tile assigns your colour to it and awards you 3 points on that tile."
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Subsequent Turns: After the first turn, players can only click on tiles that already have their own colour. Clicking a tile with your colour adds 1 point to that tile. The background colour indicates the next player."
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Conquest and Expansion: When a tile with your colour reaches 4 points, it triggers an expansion:"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   - The colour completely disappears from the original tile."
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   - Your colour spreads to the four surrounding squares in a plus shape (up, down, left, right)."
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   - Each of the four surrounding squares gains 1 point with your colour."
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   - If any of the four has your opponent’s colour, you conquer the opponent's points on that tile while adding a point to it, completely erasing theirs."
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   - The expansion is retriggered if the neighbouring tile as well reaches 4 points this way."
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Players take turns clicking on tiles and the objective is to eliminate your opponent's colour entirely from the screen."
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lilita"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

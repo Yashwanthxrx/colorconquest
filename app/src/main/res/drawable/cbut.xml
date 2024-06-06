@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer rounded square -->
+    <item>
+        <shape>
+            <solid android:color="@color/gbac" />
+            <corners android:radius="8dp" />
+            <padding android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp"/>
+        </shape>
+    </item>
+    <item
+        android:width="48dp"
+        android:height="48dp"
+        android:gravity="center">
+        <shape>
+            <solid android:color="@color/redb" /> <!-- Change color as needed for different players -->
+            <corners android:radius="50dp" />
+        </shape>
+    </item>
+</layer-list>
